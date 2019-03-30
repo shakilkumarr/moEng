@@ -1,0 +1,39 @@
+{
+    "presets": [
+        "next/babel",
+        "@babel/preset-flow"
+    ],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": [
+                    "./"
+                ],
+                "alias": {}
+            }
+        ],
+        [
+            "transform-react-remove-prop-types",
+            {
+                "removeImport": true
+            }
+        ],
+        [
+            "babel-plugin-styled-components",
+            {
+                "ssr": true,
+                "displayName": true,
+                "preprocess": false
+            }
+        ],
+        [
+            "inline-import",
+            {
+                "extensions": [
+                    ".css"
+                ]
+            }
+        ]
+    ]
+}

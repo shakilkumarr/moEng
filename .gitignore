@@ -1,0 +1,10 @@
+.next/
+.git/
+node_modules/
+*.log
+.vscode/
+
+/.idea/
+*._.DS_Store
+*.DS_Store
+*dump.rdb
